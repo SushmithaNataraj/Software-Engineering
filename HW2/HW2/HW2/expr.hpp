@@ -13,7 +13,7 @@
 
 class Expr{
 public:
-    virtual bool equals(Expr *e);
+    virtual bool equals(Expr *e)=0;
 };
 
 class Number : public Expr{
