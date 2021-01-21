@@ -12,6 +12,9 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    Catch::Session().run(argc, argv);
+    if(argc>1 && argv[1] == std::string("--test")){
+        if(Catch::Session().run(1, argv))
+            exit(1);
+    }
     return 0;
 }

@@ -8,7 +8,7 @@
 
 #include "expr.hpp"
 #include "catch.hpp"
-#include <iostream>
+
 Number::Number(int val){
     this->val = val;
 }
