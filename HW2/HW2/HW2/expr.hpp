@@ -41,4 +41,12 @@ public:
     bool equals(Expr *e);
 };
 
+class Variable : public Expr{
+public:
+    std::string name;
+    
+    Variable(std::string name);
+    bool equals(Expr *e);
+};
+
 #endif /* expr_hpp */
